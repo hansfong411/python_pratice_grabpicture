@@ -23,7 +23,7 @@ for title in results2:
     subDir_path = '/'+avname+'/'+text+'/'
     for index, link in enumerate(image_links):
         if not os.path.exists(subDir_path):
-            os.makedirs(subDir_path)  # 建立資料夾
+            os.makedirs(subDir_path)  
         try:
             print(link)
             img = requests.get(link)  # 下載圖片
